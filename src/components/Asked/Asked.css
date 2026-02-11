@@ -1,0 +1,48 @@
+.faq{
+    padding: 200px 6%;
+    .accordian{
+        margin-top: 40px;
+        font-family:Arial, Helvetica, sans-serif ;
+        .tab{
+
+            border-bottom:3px solid #339dbf;
+            padding-bottom: 50px;
+        }
+        .que{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            .que-no{
+                font-size: 50px;
+                font-weight: bold;
+                color:  #339dbf;
+            }
+            .guestion{
+                font-weight: bold;
+                font-size: 40px;
+                margin-left: 10px;
+                color: #fff;
+            }
+            .plus-sign{
+                font-size: 30px;
+            }
+        }
+        input[type=checkbox]{
+            display: none;
+        }
+        .tab-content{
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 10px;
+            transition: 0.2s;
+            line-height: 1.5;
+            color: gray;
+            
+            padding-top: 30px;
+        }
+        input:checked ~ .tab-content{
+            height: 100%;
+            font-size: 20px;
+        }
+    }
+}
